@@ -1,37 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Wang Luo | Computational Optics</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wang Luo - Computational Optics, Gaussian Beam Decomposition, Differentiable Ray Tracing">
+<meta name="keywords" content="Computational Optics, Gaussian Beam, Differentiable Ray Tracing, High NA">
+<meta name="author" content="Wang Luo">
+<title>Wang Luo | Computational Optics</title>
 <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
 <body>
 
-<canvas id="particles"></canvas>
+<div id="bg"></div>
 
-<div class="content">
+<nav>
+  <div class="logo">Wang Luo</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="blog.html">Blog</a>
+    <button id="langToggle">中文</button>
+    <button id="themeToggle">🌙</button>
+  </div>
+</nav>
 
-<h1>Wang Luo</h1>
-<p>PhD Researcher | Coherent Optics | Differentiable Ray Tracing</p>
+<header class="hero">
+  <h1 data-en="Computational Optics & Coherent Modeling"
+      data-cn="计算光学与相干建模">
+      Computational Optics & Coherent Modeling
+  </h1>
+  <p data-en="Gaussian Beam Decomposition · Differentiable Ray Tracing"
+     data-cn="高斯光束分解 · 可微分光线追迹">
+     Gaussian Beam Decomposition · Differentiable Ray Tracing
+  </p>
+</header>
 
-<div class="buttons">
-  <a href="blog.html">Blog</a>
-  <a href="#research">Research</a>
-</div>
-
-<section id="research">
-<h2>Research</h2>
+<section id="about">
+<h2>About</h2>
 <p>
-Focused on Gaussian Beam Decomposition, high-NA systems,
-and aberration-tolerant coherent field modeling.
+PhD researcher working on coherent light propagation, high‑NA systems,
+and aberration‑tolerant modeling.
 </p>
 </section>
 
+<section id="research">
+<h2>Research Interests</h2>
+<ul>
+<li>High-NA Coherent Modeling</li>
+<li>Beamlet Methods</li>
+<li>Differentiable Optical Simulation</li>
+</ul>
+</section>
+
+<section id="publications">
+<h2>Publications</h2>
+
+<div class="pub">
+<strong>Efficient Beamlet Modeling in High‑NA Systems</strong><br>
+<em>Optics Journal, 2026</em><br>
+<button onclick="toggleBib('bib1')">BibTeX</button>
+<pre id="bib1" class="bib">
+@article{luo2026beamlet,
+  title={Efficient Beamlet Modeling in High-NA Systems},
+  author={Luo, Wang},
+  journal={Optics Journal},
+  year={2026}
+}
+</pre>
 </div>
 
-<script src="particles.js"></script>
+</section>
+
+<section>
+<h2>Visitor Counter</h2>
+<p id="counter"></p>
+</section>
+
+<footer>
+© 2026 Wang Luo · Powered by GitHub Pages
+</footer>
+
+<script src="main.js"></script>
+<script src="threebg.js"></script>
 
 </body>
 </html>
