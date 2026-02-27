@@ -1,120 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Wang Luo | Personal Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            border-bottom: 2px solid #334155;
-            padding-bottom: 10px;
-            margin-top: 60px;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            background: #334155;
-        }
-
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            margin-top: 80px;
-            border-top: 1px solid #334155;
-            font-size: 14px;
-            color: #94a3b8;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Wang Luo | Computational Optics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Wang Luo</h1>
-    <p>PhD Researcher | Optical Simulation | Computational Imaging</p>
-</header>
+<canvas id="particles"></canvas>
 
-<div class="container">
+<div class="content">
 
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            I am currently working on coherent light field propagation, Gaussian beam decomposition, 
-            and differentiable ray tracing methods.
-        </p>
-    </div>
+<h1>Wang Luo</h1>
+<p>PhD Researcher | Coherent Optics | Differentiable Ray Tracing</p>
 
-    <h2>Research Projects</h2>
-    <div class="card">
-        <h3>Gaussian Beam Decomposition</h3>
-        <p>Efficient modeling of coherent field propagation using beamlet methods.</p>
-    </div>
+<div class="buttons">
+  <a href="blog.html">Blog</a>
+  <a href="#research">Research</a>
+</div>
 
-    <div class="card">
-        <h3>Differentiable Ray Tracing</h3>
-        <p>Integrating PyTorch-based differentiable optics simulation frameworks.</p>
-    </div>
-
-    <h2>Publications</h2>
-    <div class="card">
-        <p>Coming soon...</p>
-    </div>
-
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: your_email@example.com</p>
-        <p>GitHub: <a href="#">github.com/yourname</a></p>
-    </div>
+<section id="research">
+<h2>Research</h2>
+<p>
+Focused on Gaussian Beam Decomposition, high-NA systems,
+and aberration-tolerant coherent field modeling.
+</p>
+</section>
 
 </div>
 
-<footer>
-    © 2026 Wang Luo. All rights reserved.
-</footer>
+<script src="particles.js"></script>
 
 </body>
 </html>
